@@ -55,5 +55,19 @@ series_idades
 #navegando nos índices novos
 series_idades['e']
 # %%
-series_idades.iloc[0]
+# você está garantindo que está pegando pela posição
+series_idades.iloc[0:2]
+# %%
+# com o .loc voce está garantindo que está pegando pelo índice
+series_idades.loc['t']
+print(series_idades.loc['t'])
+series_idades['t']
+print(series_idades['t'])
+# %%
+series_idades.name = 'idades'
+series_idades
+# %%
+# é como se fosse igual nomear uma coluna no excel
+series_idades = pd.Series(idades, name="idades")
+series_idades
 # %%
